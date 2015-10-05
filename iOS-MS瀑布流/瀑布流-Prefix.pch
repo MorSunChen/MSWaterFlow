@@ -1,0 +1,22 @@
+//
+//  瀑布流-Prefix.pch
+//  iOS-MS瀑布流
+//
+//  Created by 陈朝阳 on 15/9/29.
+//  Copyright (c) 2015年 czy. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+
+// 颜色
+#define MSColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define MSColorRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
+// 随机色
+#define MSRandomColor MSColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#endif
